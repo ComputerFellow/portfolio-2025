@@ -1,3 +1,4 @@
+
 .projects-container {
   margin: 0 auto;
   font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
@@ -34,8 +35,9 @@
       top: -1px;
       right: -1px;
       height: 110%;
-      width: 77%;
+      width: 78%;
       background: url('../images/project-background-white.svg');
+      // opacity: 97%;
       background-size: cover;
 
       @include tablet {
@@ -52,6 +54,8 @@
         width: 100%;
         padding: 35px;
         box-sizing: border-box;
+        // added this
+        // opacity: 50%;
       }
 
       h3 {
@@ -107,7 +111,7 @@
         }
         .project-link.disabled {
           pointer-events: none;
-          color: #ccc;
+          color: #a2a2a2;
         }
       }
 

@@ -31,9 +31,13 @@ class Navbar extends React.PureComponent {
     if (!this.state.darkMode) {
       localStorage.setItem('currentTheme', 'dark');
       document.body.classList.add('dark-theme');
+      document.body.classList.remove('light-theme');
+
     } else {
       localStorage.setItem('currentTheme', 'light');
       document.body.classList.remove('dark-theme');
+      document.body.classList.add('light-theme');
+
     }
   }
 

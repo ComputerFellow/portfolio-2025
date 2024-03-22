@@ -1,4 +1,5 @@
 import React from 'react';
+import music from 'images/music.jpg';
 
 class About extends React.PureComponent {
   render() {

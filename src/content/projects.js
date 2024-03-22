@@ -4,6 +4,7 @@ import scriptteam from 'images/scriptteam.jpg';
 import rpg from 'images/rpg.jpg';
 import calc from 'images/calc.jpg';
 import ss from 'images/ss.jpg';
+import pbox from 'images/pbox.jpg';
 
 
 // image can be any size. just make sure it is close to a 1:1 ratio - a square.
@@ -13,6 +14,7 @@ export default [
     title: 'Previous Portfolio',
     description:
       'A website showcasing a collection of projects I worked on as a freelance developer. I used it mostly to practice layouts, animations, dark/light themes, and smooth scrolling.',
+      
     skills: ['HTML', 'CSS', 'JavaScript', 'ES6', 'React', 'Redux'],
     // skills: ['HTML', 'CSS', 'Sass', 'JavaScript', 'ES6', 'React', 'Redux'],
     image: tkodes,
@@ -69,7 +71,6 @@ export default [
       'JavaScript',
       'React',
       // 'Polymer',
-      'Material Design',
     ],
     image: scriptteam,
     links: {
@@ -82,9 +83,30 @@ export default [
     },
   },
   {
+    title: 'Client Project',
+    description:
+      'Recent client project utilizing HTML/CSS/VanillaJS to recreate themes for an existing website. Utilizes DOMContentLoaded and more.',
+    skills: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Git'
+      // 'Polymer',
+    ],
+    image: pbox,
+    links: {
+      github: 'https://sites.google.com/view/tonystechprojects/',
+      preview: 'https://ecstatic-pasteur-2d6c7g.netlify.app/',
+      disabled: {
+        github: true,
+        preview: false,
+      },
+    },
+  },
+  {
     title: 'College Project',
     description:
-      'First client app built on C# using ASP.NET Core. Very valuable experience and it provided the ability to try different front/back end technologies. I also was able to set up roles (administrator, guest) which this shows.',
+      'First client app built on C# using ASP.NET Core. Very valuable experience and it provided the ability to try different front/back end technologies. I also was able to set up roles (administrator, guest).',
     skills: [
       'HTML',
       'CSS',

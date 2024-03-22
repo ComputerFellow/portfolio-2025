@@ -1,15 +1,53 @@
-@import 'src/scss/colors';
+@import '../scss/colors';
 
 /* Default light theme */
 
-// body {
-    // background-color: #ffffff;
-    // background-color: #f12626;
-//   }
-  
+body{
+  transition: background-color 1.5s, color 1s;
+}
+
   /* Dark theme */
   body.dark-theme {
-    background-color: #191336;
-    // color: #ffffff;
+    background-color: #090714;
+
+    .about-container {
+      background-color: "";    
+
+      .terminal-window {
+        background-color: #07060e;    
+        transition: background-color 2s, color 1s;
+      }
+    }
+    .navbar-container{
+      .navbar{
+        .exception{
+          transition: ease-in-out ;
+          color: $highlighterGreen;
+        }
+      }
+    }
+
+
+    .project-content{
+      background-color: #06050eec;    
+
+      .project-links{
+        filter: opacity(95%);
+      }
+    }
+
+    .project-card{
+      background-color: #07060e;    
+
+      .project-image{
+        filter: opacity(50%);
+      }
+
+      .project-background {
+        background: url('../images/project-background-dark.svg');
+        background-size: cover;
+      }
+    }    
   }
+
   
