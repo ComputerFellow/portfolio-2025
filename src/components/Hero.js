@@ -9,6 +9,8 @@ class Hero extends React.PureComponent {
 
   render() {
     return (
+      
+
       <div className="hero-container">
         <Typewriter className="hero-title" text="A (K)oder's Portfolio" />
 

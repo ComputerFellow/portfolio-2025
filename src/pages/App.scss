@@ -2,52 +2,208 @@
 
 /* Default light theme */
 
-body{
-  transition: background-color 1.5s, color 1s;
+body {
+  transition: background-color 0.5s, color 1s;
 }
 
-  /* Dark theme */
-  body.dark-theme {
-    background-color: #090714;
+/* Dark theme */
+body.dark-theme {
+  background-color: #090714;
 
-    .about-container {
-      background-color: "";    
+  .about-container {
+    background-color: '';
 
-      .terminal-window {
-        background-color: #07060e;    
-        transition: background-color 2s, color 1s;
+    .terminal-window {
+      background-color: #07060e;
+      transition: background-color 1s, color 1s;
+    }
+  }
+  .navbar-container {
+    .navbar {
+      .exception {
+        transition: ease-in-out;
+        color: $highlighterGreen;
       }
     }
-    .navbar-container{
-      .navbar{
-        .exception{
-          transition: ease-in-out ;
-          color: $highlighterGreen;
+  }
+
+  .project-content {
+    background-color: #06050eec;
+
+    .project-links {
+      filter: opacity(95%);
+    }
+  }
+
+  .project-card {
+    background-color: #07060e;
+
+    .project-image {
+      filter: opacity(50%);
+    }
+
+    .project-background {
+      background: url('../images/project-background-dark.svg');
+      background-size: cover;
+    }
+  }
+}
+
+body.triple-black-theme {
+  background-color: #000000;
+  color: $electricGreen;
+
+  .about-container {
+    background-color: '';
+
+    .terminal {
+      .terminal-header {
+        background-color: #000000;
+        border: dotted 1px;
+        border-color: #f3faf2;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .header-button {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          margin-left: 9px;
+        }
+
+        .red {
+          background-color: #faf3f2;
+          border: solid 1px #adffa4;
+        }
+
+        .yellow {
+          background-color: #bcffa2;
+          border: solid 1px #48ff24;
+        }
+
+        .green {
+          background-color: #33c948;
+          border: solid 1px #2dbb41;
+        }
+      }
+      .terminal-window {
+        background-color: #000000;
+        .return-statement{
+          color: $electricGreen;
+        }
+        a {
+          color: $electricGreen;
+        }
+
+        transition: background-color 1s, color 1s;
+      }
+    }
+  }
+
+  .navbar-container {
+    .navbar {
+      .exception {
+        transition: ease-in-out;
+        color: $lightGrey;
+      }
+    }
+  }
+
+
+  .projects-container {
+
+  
+    .project-card {
+
+
+      .project-image {
+
+      }
+  
+      .project-background {
+
+      }
+  
+      .project-content {
+
+
+  
+        h3 {
+
+          color: $electricGreen;
+        }
+  
+        .project-links {
+
+  
+          .project-link {
+
+            color: $electricGreen;
+  
+            &:hover {
+
+            }
+  
+            &.secondary {
+              color: $electricGreen;
+  
+              &:hover {
+              }
+            }
+          }
+          .project-link.disabled {
+            color: $electricGreen;
+          }
+        }
+  
+        p {
+          color: $electricGreen;
+        }
+  
+        a {
+        }
+  
+        .project-skills {
+
+  
+          .project-skill {
+
+            color: $electricGreen;
+          }
+          .active {
+            color: $electricGreen;
+          }
+  
         }
       }
     }
+  }
+  
+  
 
-
-    .project-content{
-      background-color: #06050eec;    
-
-      .project-links{
-        filter: opacity(95%);
-      }
+  .project-content {
+    background-color: #000000ec;
+    .project-links {
+      filter: opacity(95%);
     }
-
-    .project-card{
-      background-color: #07060e;    
-
-      .project-image{
-        filter: opacity(50%);
-      }
-
-      .project-background {
-        background: url('../images/project-background-dark.svg');
-        background-size: cover;
-      }
-    }    
   }
 
-  
+  .project-link{
+    color: $electricGreen;
+  }
+
+  .project-card {
+    background-color: #000000;
+
+    .project-image {
+      filter: opacity(50%);
+    }
+
+    .project-background {
+      background: url('../images/project-background-dark.svg');
+      background-size: cover;
+    }
+  }
+}

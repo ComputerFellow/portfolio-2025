@@ -138,8 +138,16 @@
           font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
           font-size: 0.85em;
           color: $grey;
-      
         }
+        .active {
+          border: solid 2px $linkTeal;
+          color: $linkTeal;
+        }
+
+        // .active .dark-theme{
+        //   color: $pink;
+
+        // }
       }
     }
   }

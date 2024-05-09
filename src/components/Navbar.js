@@ -10,6 +10,7 @@ class Navbar extends React.PureComponent {
   }
 
   componentDidMount() {
+
     this.refs.navbar.addEventListener('click', e => {
       if (e.target.innerText === 'Projects') {
         document
@@ -23,24 +24,21 @@ class Navbar extends React.PureComponent {
     });
   }
 
+  // //THE ATTEMPT
   handleClick() {
-    console.log(this.state.darkMode)
-    this.setState(prevState => ({
-      darkMode: !prevState.darkMode
-    }));
-    if (!this.state.darkMode) {
-      localStorage.setItem('currentTheme', 'dark');
-      document.body.classList.add('dark-theme');
-      document.body.classList.remove('light-theme');
-
-    } else {
-      localStorage.setItem('currentTheme', 'light');
-      document.body.classList.remove('dark-theme');
-      document.body.classList.add('light-theme');
-
-    }
+    this.setState(prevState => {
+      const nextTheme = prevState.darkMode ? 'light' : 'dark';
+      this.props.onThemeChange(nextTheme);
+      return { darkMode: !prevState.darkMode };
+      
+    }, () => {
+      const theme = this.state.darkMode ? 'dark' : 'light';
+      localStorage.setItem('currentTheme', theme);
+      document.body.classList.remove('light-theme', 'dark-theme');
+      document.body.classList.add(`${theme}-theme`);
+    });
   }
-
+  
   render() {
     
     return (
@@ -56,17 +54,12 @@ class Navbar extends React.PureComponent {
                 {this.state.darkMode ? 'Light' : 'Dark'}
               </a> 
               
-              {/* <button className="exception" type="button" onClick={this.handleClick}>
-                {this.state.darkMode ? 'Light' : 'Dark'}
-              </button>  */}
-
             </div>
           </nav>
         </div>
       </div>
     );
   }
-  
 }
 
 export default Navbar;

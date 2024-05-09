@@ -2,66 +2,43 @@ import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 class ProjectSkill extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = { isActive: false, isAllActive: false };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    const projectSkillCount = document.getElementsByClassName('project-skill').length;
+    const activeProjectSkillCount = document.getElementsByClassName('project-skill active').length;
+    const darkThemeIsActive = document.body.classList.contains('dark-theme');
+    console.log(this.state); // Logs the new state
+
+  
+    if (darkThemeIsActive) {
+      this.setState(prevState => ({ isActive: !prevState.isActive }));
+    }
+    if (projectSkillCount === activeProjectSkillCount){
+      this.setState(prevState => {
+        const isAllActive = prevState.isAllActive ? false : true;
+        this.props.onAllActiveChange(isAllActive); 
+        return { isAllActive: !prevState.isAllActive};
+      }, () => {
+      })
+    }
+  }
+  
+
   render() {
-    const { isActive, skill, id, onClick } = this.props;
+    const { isActive } = this.state;
+    const { skill } = this.props;
     const buttonClass = isActive ? 'project-skill active' : 'project-skill';
 
     return (
-      <span className={buttonClass} onClick={onClick}>
-        {skill}
-      </span>
-    );
-  }
-}
-
-class ProjectSkills extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      projectSkills: this.props.skills.map((skill, i) => ({
-        id: i + 1,
-        skill: skill,
-        isActive: false,
-      })),
-    };
-  }
-
-  handleButtonClick = id => {
-    const darkThemeIsActive = document.body.classList.contains('dark-theme');
-    if (darkThemeIsActive) {
-      this.setState(prevState => {
-        const updatedProjectSkills = prevState.projectSkills.map(skill => {
-          if (skill.id === id) {
-            return { ...skill, isActive: !skill.isActive };
-          }
-          return skill;
-        });
-
-        return { projectSkills: updatedProjectSkills };
-      });
-    }
-  };
-
-  render() {
-    const totalButtons = this.state.projectSkills.length;
-    const activeButtons = this.state.projectSkills.filter(
-      skill => skill.isActive
-    ).length;
-    console.log(
-      `Total buttons: ${totalButtons}, Active buttons: ${activeButtons}`
-    );
-    console.log(this.state);
-
-    return (
-      <div className="project-skills">
-        {this.state.projectSkills.map(skill => (
-          <ProjectSkill
-            key={skill.id}
-            skill={skill.skill}
-            isActive={skill.isActive}
-            onClick={() => this.handleButtonClick(skill.id)}
-          />
-        ))}
+      <div>
+        <span className={buttonClass} onClick={this.handleClick}>
+          {skill}
+        </span>
       </div>
     );
   }
@@ -98,9 +75,21 @@ class ProjectLinks extends React.PureComponent {
   }
 }
 
+class ProjectSkills extends React.PureComponent {
+  render() {
+    return (
+      <div className="project-skills">
+        {this.props.skills.map((skill, index) => {
+          return <ProjectSkill skill={skill} key={index} onAllActiveChange={this.props.onAllActiveChange} />;
+        })}
+      </div>
+    );
+  }
+}
+
 class ProjectCard extends React.PureComponent {
   render() {
-    const { image, title, description, skills, links } = this.props;
+    const { image, title, description, skills, links, onAllActiveChange } = this.props;
 
     return (
       <div className="project-card">
@@ -109,7 +98,7 @@ class ProjectCard extends React.PureComponent {
         <div className="project-content">
           <h3>{title}</h3>
           <p dangerouslySetInnerHTML={{ __html: description }} />
-          <ProjectSkills skills={skills} />
+          <ProjectSkills skills={skills} onAllActiveChange={onAllActiveChange} />
           <ProjectLinks links={links} />
         </div>
       </div>
@@ -117,9 +106,10 @@ class ProjectCard extends React.PureComponent {
   }
 }
 
+
 class Projects extends React.PureComponent {
   render() {
-    const { projects } = this.props;
+    const { projects, onAllActiveChange } = this.props;
     return (
       <div className="projects-container">
         {projects.map(proj => (
@@ -130,11 +120,13 @@ class Projects extends React.PureComponent {
             links={proj.links}
             image={proj.image}
             key={proj.title}
+            onAllActiveChange={onAllActiveChange}
           />
         ))}
       </div>
     );
   }
 }
+
 
 export default Projects;

@@ -1,73 +1,69 @@
 import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
+// class ProjectSkill extends React.PureComponent {
+//   render() {
+//     return <span className="project-skill">{this.props.skill}</span>;
+//   }
+// }
+
+
 class ProjectSkill extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = { isActive: false, isFilled: false };
+    this.handleClick = this.handleClick.bind(this);
+    // this.handleClick2 = this.handleClick2.bind(this);
+
+  }
+
+  // handleClick() {
+  //   // Check if the dark theme is active
+  //   const darkThemeIsActive = document.body.classList.contains('dark-theme');
+
+  //   // Only toggle isActive if the dark theme is active
+  //   if (darkThemeIsActive) {
+  //     this.setState(prevState => ({ isActive: !prevState.isActive }));
+  //   }
+  // }
+
+
+  handleClick() {
+    // Only toggle isActive if the dark theme is active
+    if (this.state.isActive) {
+      this.setState(prevState => ({ isActive: !prevState.isActive }));
+    }
+  }
+
+  handleClick2() {
+    
+
+  }
+
+
   render() {
-    const { isActive, skill, id, onClick } = this.props;
+    const { isActive } = this.state;
+    const { skill } = this.props;
     const buttonClass = isActive ? 'project-skill active' : 'project-skill';
 
-    return (
-      <span className={buttonClass} onClick={onClick}>
-        {skill}
-      </span>
-    );
+    return <span className={buttonClass} onClick={this.handleClick}>{skill}</span>;
   }
 }
 
-class ProjectSkills extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      projectSkills: this.props.skills.map((skill, i) => ({
-        id: i + 1,
-        skill: skill,
-        isActive: false,
-      })),
-    };
-  }
 
-  handleButtonClick = id => {
-    const darkThemeIsActive = document.body.classList.contains('dark-theme');
-    if (darkThemeIsActive) {
-      this.setState(prevState => {
-        const updatedProjectSkills = prevState.projectSkills.map(skill => {
-          if (skill.id === id) {
-            return { ...skill, isActive: !skill.isActive };
-          }
-          return skill;
-        });
-
-        return { projectSkills: updatedProjectSkills };
-      });
-    }
-  };
-
+class ProjectSkills extends React.PureComponent {
   render() {
-    const totalButtons = this.state.projectSkills.length;
-    const activeButtons = this.state.projectSkills.filter(
-      skill => skill.isActive
-    ).length;
-    console.log(
-      `Total buttons: ${totalButtons}, Active buttons: ${activeButtons}`
-    );
-    console.log(this.state);
-
     return (
       <div className="project-skills">
-        {this.state.projectSkills.map(skill => (
-          <ProjectSkill
-            key={skill.id}
-            skill={skill.skill}
-            isActive={skill.isActive}
-            onClick={() => this.handleButtonClick(skill.id)}
-          />
-        ))}
+        {this.props.skills.map((skill, index) => {
+          return <ProjectSkill skill={skill} key={index} />;
+        })}
       </div>
     );
   }
 }
 
-//THIS IS THE ORIGINAL CLASS, THE 1/4 NOT MENTIONED BY COPILOT
+
 class ProjectLinks extends React.PureComponent {
   render() {
     const { github, preview, disabled } = this.props.links;
@@ -77,9 +73,7 @@ class ProjectLinks extends React.PureComponent {
           href={preview}
           rel="noopener"
           target="_blank"
-          className={`project-link ${
-            disabled && disabled.preview ? 'disabled' : ''
-          }`}
+          className={`project-link ${disabled && disabled.preview ? 'disabled' : ''}`}
         >
           Live Demo <FontAwesomeIcon icon="external-link-alt" />
         </a>
@@ -87,9 +81,7 @@ class ProjectLinks extends React.PureComponent {
           href={github}
           rel="noopener"
           target="_blank"
-          className={`project-link secondary ${
-            disabled && disabled.github ? 'disabled' : ''
-          }`}
+          className={`project-link secondary ${disabled && disabled.github ? 'disabled' : ''}`}
         >
           <FontAwesomeIcon icon={['fab', 'github']} /> View Source
         </a>
@@ -97,6 +89,7 @@ class ProjectLinks extends React.PureComponent {
     );
   }
 }
+
 
 class ProjectCard extends React.PureComponent {
   render() {
