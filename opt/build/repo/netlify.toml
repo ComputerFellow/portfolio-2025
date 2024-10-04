@@ -1,0 +1,4 @@
+[build]
+  base = "site"  # Adjust this path as needed
+  publish = "site/public"  # Adjust this path as needed
+  command = "npm run build"  # Adjust this command as needed
