@@ -1,6 +1,3 @@
 [build]
-  publish = "public" # This should match the directory where Gatsby outputs the build
-  command = "gatsby build" # Ensure this matches your build command
-
-[build.environment]
-  NODE_VERSION = "16" # Adjust if you need a specific Node version
+  publish = "public"
+  command = "gatsby build"
