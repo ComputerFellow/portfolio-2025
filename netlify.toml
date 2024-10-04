@@ -1,4 +1,6 @@
 [build]
-  base = "site"  # Adjust this path as needed
-  publish = "site/public"  # Adjust this path as needed
-  command = "npm run build"  # Adjust this command as needed
+  publish = "public" # This should match the directory where Gatsby outputs the build
+  command = "gatsby build" # Ensure this matches your build command
+
+[build.environment]
+  NODE_VERSION = "16" # Adjust if you need a specific Node version
