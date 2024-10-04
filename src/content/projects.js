@@ -11,27 +11,10 @@ import bookstore from 'images/bookstore.jpg';
 
 export default [
   {
-    title: 'Previous Portfolio',
-    description:
-      'A website showcasing a collection of projects I worked on as a freelance developer. I used it mostly to practice layouts, animations, dark/light themes, and smooth scrolling.',
-
-    skills: ['HTML', 'CSS', 'React', 'JavaScript', 'Bootstrap'],
-    // skills: ['HTML', 'CSS', 'Sass', 'JavaScript', 'ES6', 'React', 'Redux'],
-    image: tkodes,
-    links: {
-      github: 'https://github.com/tkodes/portfolio-2022.git',
-      preview: 'https://endearing-blancmange-a69911.netlify.app/',
-      disabled: {
-        github: false,
-        preview: false,
-      },
-    },
-  },
-  {
-    title: 'A Sample Music Player',
+    title: 'Music Player',
     description:
       // 'This project is based off <a href="#">this project</a> that has been instrumental in practicing a few front-end technologies.',
-      'This  <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8">project</a> made use of the ES6 features of JavaScript including template literals and arrow synthax. It uses optional chaining. Great for practice and the music made it gripping.',
+      'This project made use of the ES6 features of JavaScript including template literals and arrow synthax. It uses optional chaining. Great for practicing with JavaScript and the music made it gripping.',
     skills: ['HTML', 'CSS', 'SASS', 'JavaScript', 'ES6'],
     image: music,
     links: {
@@ -40,9 +23,26 @@ export default [
     },
   },
   {
+    title: 'Previous Portfolio',
+    description:
+      'A website showcasing a collection of projects I worked on as a freelance developer. I used it mostly to practice layouts, animations, dark/light themes, and smooth scrolling.',
+
+    skills: ['HTML', 'CSS', 'React', 'JavaScript', 'Bootstrap', 'C#'],
+    // skills: ['HTML', 'CSS', 'Sass', 'JavaScript', 'ES6', 'React', 'Redux'],
+    image: tkodes,
+    links: {
+      github: 'https://github.com/tkodes/portfolio-2022.git',
+      preview: 'https://endearing-blancmange-a69911.netlify.app/',
+      disabled: {
+        github: true,
+        preview: false,
+      },
+    },
+  },
+  {
     title: 'RPG Project',
     description:
-      'A freeCodeCamp project made using only JavaScript, HTML, and CSS to provide a simple yet engaging rpg game experience.',
+      'A freeCodeCamp <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8">project</a> made using only JavaScript, HTML, and CSS to provide a simple yet engaging rpg game experience.',
     skills: ['HTML', 'CSS', 'JavaScript'],
     image: rpg,
     links: {
@@ -62,27 +62,10 @@ export default [
       preview:
         'https://www.pythonanywhere.com/user/kwaktony/shares/a930af74061e4b09bda5d70c89e46e91/',
     },
-  },
-  {
-    title: 'First Site',
-    description:
-      'My first major app built on Google Sites - a great learning experience. This project was created to record my work at Conestoga College.',
-    skills: [
-      'HTML', 'CSS'],
-    image: scriptteam,
-    links: {
-      github: 'https://sites.google.com/view/tonystechprojects/',
-      preview: 'https://sites.google.com/view/tonystechprojects/',
-      disabled: {
-        github: true,
-        preview: false,
-      },
-    },
-  },
-  {
+  },{
     title: 'Bookstore Project',
     description:
-      'A client project made with React. Uses a custom hooks/navigation. Enables users to add, edit, and delete books.',
+      'A project made with React. Uses custom hooks/navigation. Enables users to add, edit, and delete books.',
     skills: [
       'HTML',
       'CSS',
@@ -96,11 +79,27 @@ export default [
       github: 'https://github.com/tkodes/bookstore',
       preview: 'https://tourmaline-entremet-0ca556.netlify.app/books',
       disabled: {
-        github: true,
-        preview: true,
+        github: false,
+        preview: false,
       },
     },
   },
+  {
+    title: 'First Site',
+    description:
+      'My first major app built on Google Sites - a great learning experience. This project was created to record my work at Conestoga College.',
+    skills: ['HTML', 'CSS'],
+    image: scriptteam,
+    links: {
+      github: 'https://sites.google.com/view/tonystechprojects/',
+      preview: 'https://sites.google.com/view/tonystechprojects/',
+      disabled: {
+        github: true,
+        preview: false,
+      },
+    },
+  },
+  
   // {
   //   title: 'College Project',
   //   description:
@@ -123,8 +122,6 @@ export default [
   //     },
   //   },
   // },
-
-
 
   // {
   //   title: 'Client Project',

@@ -50,20 +50,37 @@ class ProjectSkills extends React.Component {
     console.log(
       `Total buttons: ${totalButtons}, Active buttons: ${activeButtons}`
     );
-    console.log(this.state);
+    // console.log(this.state + ' is this state');
 
-    return (
-      <div className="project-skills">
-        {this.state.projectSkills.map(skill => (
-          <ProjectSkill
-            key={skill.id}
-            skill={skill.skill}
-            isActive={skill.isActive}
-            onClick={() => this.handleButtonClick(skill.id)}
-          />
-        ))}
-      </div>
-    );
+    if (totalButtons !== activeButtons){
+      return (
+        <div className="project-skills">
+          {this.state.projectSkills.map(skill => (
+            <ProjectSkill
+              key={skill.id}
+              skill={skill.skill}
+              isActive={skill.isActive}
+              onClick={() => this.handleButtonClick(skill.id)}
+            />
+          ))}
+        </div>
+      );
+    } else {
+      return (
+        <div className="txt project-skills-all-on">
+          {this.state.projectSkills.map(skill => (
+            <ProjectSkill
+              key={skill.id}
+              skill={skill.skill.split('').map((char, i) => <span key={i}>{char}</span>)}
+              isActive={skill.isActive}
+              onClick={() => this.handleButtonClick(skill.id)}
+            />
+          ))}
+        </div>
+      );
+
+    }
+
   }
 }
 

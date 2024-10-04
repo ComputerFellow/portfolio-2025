@@ -141,14 +141,96 @@
         }
         .active {
           border: solid 2px $linkTeal;
-          color: $linkTeal;
+          color: $softTeal;
+          // transition: 0.5s;
         }
-
-        // .active .dark-theme{
-        //   color: $pink;
-
-        // }
+      
+      
       }
+      .project-skills-all-on {
+        display: flex;
+        flex-wrap: wrap;
+
+        .project-skill {
+          border-radius: 4px;
+          border: solid 2px $highlighterGreen;
+          padding: 8px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+          font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+          font-size: 0.85em;
+          color: $grey;
+        }
+        .active {
+          border: solid 2px $linkTeal;
+          color: $linkTeal;
+          transition: 0.5s;
+        }
+// fast speed version
+      //   // from https://lenadesign.org/2021/03/05/pure-css-rainbow-text-animation/
+      //   font-family:arial black;
+      //   border: $softTeal;
+      //   // font-size:70px;
+      //   background-image: 
+      //     linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+      //   -webkit-background-clip: text;
+      //   -webkit-text-fill-color: transparent;  
+      //   animation: move 35s linear infinite;
+      
+      // @keyframes move {
+      //   to {
+      //     background-position: 4500vh;
+      //   }
+      // }
+// Slow speed individual version
+        // .active {
+        //   /*
+        //    * Animation variables
+        //    */
+        //   border: solid 2px $linkTeal;
+
+        //   $animationSteps: 20;
+        //   $animationDuration: 15;
+        //   $animationElement: span;
+        //   $animationElementsCount: 100;
+        //   $delayBetweenLetters: 0.2;
+        
+        //   /*
+        //    * Elements settings
+        //    */
+        //   #{$animationElement} {
+        //     animation-name: anim-text-flow-keys;
+        //     animation-duration: #{$animationDuration}s;
+        //     animation-iteration-count: infinite;
+        //     animation-direction: alternate;
+        //     animation-fill-mode: forwards;
+        //   }
+        
+        //   /*
+        //    * Keyframe loop
+        //    */
+        //   @keyframes anim-text-flow-keys {
+        //     @for $i from 0 through $animationSteps {
+        //       #{percentage($i * (1 / $animationSteps))} {
+        //         color: hsla(random(365), 60, 60, 1);
+        //       }
+        //     }
+        //   }
+        
+        //   /*
+        //    * Element animation delay loop
+        //    */
+        //   $totalDelayTime: $animationElementsCount * $delayBetweenLetters;
+        
+        //   @for $i from 1 through $animationElementsCount {
+        //     #{$animationElement}:nth-of-type(#{$i}) {
+        //       animation-delay: #{($i * $delayBetweenLetters) - $totalDelayTime}s;
+        //     }
+        //   }
+        // }
+        
+      }
+      
     }
   }
 }
