@@ -19,7 +19,7 @@ class ContactLinks extends React.PureComponent {
           </a>
         </span>
         <span>
-          <a rel="noopener" target="_blank" href="https://github.com/tkodes">
+          <a rel="noopener" target="_blank" href="https://github.com/HyunKodes">
             GitHub
           </a>
         </span>

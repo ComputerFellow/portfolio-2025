@@ -1,4 +1,4 @@
-import tkodes from 'images/tkodes.jpg';
+import hkodes from 'images/hkodes.jpg';
 import music from 'images/music.jpg';
 import scriptteam from 'images/scriptteam.jpg';
 import rpg from 'images/rpg.jpg';
@@ -18,7 +18,7 @@ export default [
     skills: ['HTML', 'CSS', 'SASS', 'JavaScript', 'ES6'],
     image: music,
     links: {
-      github: 'https://github.com/tkodes/music',
+      github: 'https://github.com/HyunKodes/music',
       preview: 'https://endearing-blancmange-a69911.netlify.app/music',
     },
   },
@@ -29,9 +29,9 @@ export default [
 
     skills: ['HTML', 'CSS', 'React', 'JavaScript', 'Bootstrap', 'C#'],
     // skills: ['HTML', 'CSS', 'Sass', 'JavaScript', 'ES6', 'React', 'Redux'],
-    image: tkodes,
+    image: hkodes,
     links: {
-      github: 'https://github.com/tkodes/portfolio-2022.git',
+      github: 'https://github.com/HyunKodes/portfolio-2022.git',
       preview: 'https://endearing-blancmange-a69911.netlify.app/',
       disabled: {
         github: true,
@@ -46,7 +46,7 @@ export default [
     skills: ['HTML', 'CSS', 'JavaScript'],
     image: rpg,
     links: {
-      github: 'https://github.com/tkodes/rpg',
+      github: 'https://github.com/HyunKodes/rpg',
       preview: 'https://endearing-blancmange-a69911.netlify.app/rpg',
     },
   },
@@ -76,7 +76,7 @@ export default [
     ],
     image: bookstore,
     links: {
-      github: 'https://github.com/tkodes/bookstore',
+      github: 'https://github.com/HyunKodes/bookstore',
       preview: 'https://tourmaline-entremet-0ca556.netlify.app/books',
       disabled: {
         github: false,
