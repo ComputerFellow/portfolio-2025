@@ -12,12 +12,12 @@ class Hero extends React.PureComponent {
       
 
       <div className="hero-container">
-        <Typewriter className="hero-title" text="A (K)oder's Portfolio" />
+        <Typewriter className="hero-title" text="Hyun Kwak" />
 
         <div className="hero-description">
-          I am a web developer with a passion for building functional applications and 
-          eye-catching user experiences.<br />Check out my{' '}
-          <Scrollchor to="#projects">projects</Scrollchor> below!
+          I am a web developer with a passion for building functional applications and
+          eye-catching user experiences.<br />Check out my some of my {' '}
+          <Scrollchor to="#projects">side projects</Scrollchor> below!
         </div>
       </div>
     );

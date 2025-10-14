@@ -5,37 +5,45 @@
   .terminal {
     .terminal-header {
       height: 28px;
-      background-color: #e4e3e5;
+      // background-color: #e4e3e5;
+      background-color: #2b313c;
       border-radius: 10px 10px 0 0;
       display: flex;
-      justify-content: flex-start;
+      justify-content: flex-end;
       align-items: center;
 
       .header-button {
         width: 12px;
         height: 12px;
         border-radius: 50%;
-        margin-left: 9px;
+        margin-right: 9px;
       }
 
       .red {
-        background-color: #f96256;
-        border: solid 1px #f65549;
+        // background-color: #f96256;
+        // border: solid 1px #f65549;
+        background-color: #d31919;
+        border: solid 1px rgb(239, 73, 62);
       }
 
       .yellow {
-        background-color: #fdbc3d;
-        border: solid 1px #ffb524;
+        // background-color: #fdbc3d;
+        // border: solid 1px #ffb524;
+        background-color: #377cf1;
+        border: solid 1px #2c71e9;
       }
 
       .green {
-        background-color: #33c948;
-        border: solid 1px #2dbb41;
+        // background-color: #33c948;
+        // border: solid 1px #2dbb41;
+        background-color: #fd7d00;
+        border: solid 1px #f37a00;
       }
     }
 
     .terminal-window {
-      background-color: $fadedPurple;
+      // background-color: $fadedPurple;
+      background-color: $linux;
       border-radius: 0 0 4px 4px;
       box-shadow: 0 50px 100px rgba(50, 50, 93, 0.15),
         0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);

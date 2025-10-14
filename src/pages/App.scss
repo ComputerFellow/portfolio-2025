@@ -39,7 +39,7 @@ body.dark-theme {
     background-color: #07060e;
 
     .project-image {
-      filter: opacity(50%);
+      filter: opacity(80%);
     }
 
     .project-background {
@@ -97,7 +97,7 @@ body.triple-black-theme {
           color: $electricGreen;
         }
 
-        transition: background-color 1s, color 1s;
+        transition: background-color 3s, color 1s;
       }
     }
   }

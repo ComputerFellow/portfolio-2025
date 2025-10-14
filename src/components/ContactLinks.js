@@ -5,8 +5,8 @@ class ContactLinks extends React.PureComponent {
     return (
       <div className="contact-links">
         <span>
-          <a rel="noopener" target="_blank" href="mailto:kwaktony@outlook.com">
-            kwaktony@outlook.com
+          <a rel="noopener" target="_blank" href="mailto:tkdev.to@outlook.com">
+            Email
           </a>
         </span>
         <span>

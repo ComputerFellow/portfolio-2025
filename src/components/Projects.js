@@ -47,12 +47,12 @@ class ProjectSkills extends React.Component {
     const activeButtons = this.state.projectSkills.filter(
       skill => skill.isActive
     ).length;
-    console.log(
-      `Total buttons: ${totalButtons}, Active buttons: ${activeButtons}`
-    );
+    // console.log(
+    //   `Total buttons: ${totalButtons}, Active buttons: ${activeButtons}`
+    // );
     // console.log(this.state + ' is this state');
 
-    if (totalButtons !== activeButtons){
+    if (totalButtons !== activeButtons) {
       return (
         <div className="project-skills">
           {this.state.projectSkills.map(skill => (
@@ -71,16 +71,16 @@ class ProjectSkills extends React.Component {
           {this.state.projectSkills.map(skill => (
             <ProjectSkill
               key={skill.id}
-              skill={skill.skill.split('').map((char, i) => <span key={i}>{char}</span>)}
+              skill={skill.skill
+                .split('')
+                .map((char, i) => <span key={i}>{char}</span>)}
               isActive={skill.isActive}
               onClick={() => this.handleButtonClick(skill.id)}
             />
           ))}
         </div>
       );
-
     }
-
   }
 }
 
@@ -127,7 +127,10 @@ class ProjectCard extends React.PureComponent {
           <h3>{title}</h3>
           <p dangerouslySetInnerHTML={{ __html: description }} />
           <ProjectSkills skills={skills} />
-          <ProjectLinks links={links} />
+          <div className="links-and-circles">
+            <ProjectLinks links={links} />
+            <img className="circles" src={image} />
+          </div>
         </div>
       </div>
     );
