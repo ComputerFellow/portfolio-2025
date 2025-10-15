@@ -22,7 +22,7 @@ export default [
       // 'A list of books that can be added to, edited, stored, and deleted. Books persist upon refreshing through API connection with a third party database.',
       // 'This project is a comprehensive book management system built with React. Users can add, edit, store, and delete books, with all data persisting through an API connection to a third-party database. This project highlights my ability to integrate REST APIs and real-time data storage, ensuring that book information remains consistent after refreshing the page. It was a challenging yet rewarding experience that significantly enhanced my skills in full-stack development.',
       // "I Users can add, edit, store, and delete books, with all data remaining through an API connection to a third-party database. This project highlights my ability to integrate REST APIs and real-time data storage, ensuring that book information remains consistent after refreshing the page. It was a challenging yet rewarding experience that significantly enhanced my skills in full-stack development.",
-      "I included this project as an example of a full stack app. It connects to external APIs for open source photos and a third party database. It highlights the the variety of skills required for developing apps with JS/React and fundamental related technologies and concepts.",
+      "I included this project as an example of a FULL STACK APP. It connects to external APIs for open source photos and a third party database. It highlights the the variety of skills required for developing apps with JS/React and fundamental related technologies and concepts.",
     skills: [
       'HTML',
       'CSS',
