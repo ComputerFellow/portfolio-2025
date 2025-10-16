@@ -1,5 +1,5 @@
 import hkodes from 'images/hkodes.jpg';
-import music from 'images/music.jpg';
+import music from 'images/music-v3.jpg';
 import scriptteam from 'images/scriptteam.jpg';
 import baseball from 'images/baseball.jpg';
 import carousel from 'images/carousel.jpg';
