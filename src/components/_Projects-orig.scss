@@ -50,7 +50,7 @@
       width: 78%;
       background: url('../images/project-background-white.svg');
       background-size: cover;
-      opacity: 1;
+      opacity: 0.95;
 
       @include tablet {
         display: none;
@@ -83,22 +83,20 @@
         justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 20px;
+        width: 60%;
 
         .project-link {
+          margin-right: 20px;
+          margin-top: 20px;
           white-space: nowrap;
           display: inline-block;
           line-height: 40px;
-          height: 40px;
-          width: 140px;
           padding: 0 18px;
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
             0 2px 4px rgba(0, 0, 0, 0.06);
           border-radius: 8px;
           letter-spacing: 0.02em;
           text-decoration: none;
-          text-align: center;
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
           font-size: 0.9em;
@@ -108,15 +106,6 @@
           color: #fff;
           position: relative;
           overflow: hidden;
-
-          svg, img {
-            display: inline-block;
-            vertical-align: middle;
-            margin: 0 6px 0 0;
-            flex-shrink: 0;
-            position: relative;
-            top: -2px;
-          }
 
           &::before {
             content: '';
@@ -148,7 +137,6 @@
             background: #fff;
             color: $purple;
             border: 2px solid rgba($purple, 0.2);
-            line-height: 36px; // Adjust for border (40px - 4px for top+bottom border)
 
             &:hover {
               background: #fff;
