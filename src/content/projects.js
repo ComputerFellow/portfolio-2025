@@ -1,7 +1,8 @@
-import hkodes from 'images/hkodes.jpg';
+import tkodes from 'images/tkodes-v2.jpg';
 import music from 'images/music-v3.jpg';
 import scriptteam from 'images/scriptteam.jpg';
 import baseball from 'images/baseball.jpg';
+import pics from 'images/pics-engine.jpg';
 import carousel from 'images/carousel.jpg';
 import carouseldark from 'images/carousel-dark.jpg';
 import carouseldark2 from 'images/carousel-dark2.jpg';
@@ -16,59 +17,59 @@ import stringofpearls from 'images/stringofpearls.jpg';
 // image can be any size. just make sure it is close to a 1:1 ratio - a square.
 
 export default [
-  {
-    title: 'Book List',
-    description:
-      // 'A list of books that can be added to, edited, stored, and deleted. Books persist upon refreshing through API connection with a third party database.',
-      // 'This project is a comprehensive book management system built with React. Users can add, edit, store, and delete books, with all data persisting through an API connection to a third-party database. This project highlights my ability to integrate REST APIs and real-time data storage, ensuring that book information remains consistent after refreshing the page. It was a challenging yet rewarding experience that significantly enhanced my skills in full-stack development.',
-      // "I Users can add, edit, store, and delete books, with all data remaining through an API connection to a third-party database. This project highlights my ability to integrate REST APIs and real-time data storage, ensuring that book information remains consistent after refreshing the page. It was a challenging yet rewarding experience that significantly enhanced my skills in full-stack development.",
-      "I included this project as an example of a full stack app. It connects to external APIs for open source photos and a third party database. It highlights the the variety of skills required for developing apps with JS/React and fundamental related technologies and concepts.",
-    skills: [
-      'HTML',
-      'CSS',
-      'React',
-      'REST API',
-      'Firebase',
-      'JavaScript',
+  // {
+  //   title: 'Book List',
+  //   description:
+  //     // 'A list of books that can be added to, edited, stored, and deleted. Books persist upon refreshing through API connection with a third party database.',
+  //     // 'This project is a comprehensive book management system built with React. Users can add, edit, store, and delete books, with all data persisting through an API connection to a third-party database. This project highlights my ability to integrate REST APIs and real-time data storage, ensuring that book information remains consistent after refreshing the page. It was a challenging yet rewarding experience that significantly enhanced my skills in full-stack development.',
+  //     // "I Users can add, edit, store, and delete books, with all data remaining through an API connection to a third-party database. This project highlights my ability to integrate REST APIs and real-time data storage, ensuring that book information remains consistent after refreshing the page. It was a challenging yet rewarding experience that significantly enhanced my skills in full-stack development.",
+  //     "I included this project as an example of a full stack app. It connects to external APIs for open source photos and a third party database. It highlights the the variety of skills required for developing apps with JS/React and fundamental related technologies and concepts.",
+  //   skills: [
+  //     'HTML',
+  //     'CSS',
+  //     'React',
+  //     'REST API',
+  //     'Firebase',
+  //     'JavaScript',
 
-      // 'Polymer',
-    ],
-    image: booklist2,
-    links: {
-      github: 'https://github.com/HyunKodes/booklist',
-      preview: 'https://booklist-lib.netlify.app/',
-      disabled: {
-        github: false,
-        preview: false,
-      },
-    },
-  },
-  {
-    title: 'Location Search',
-    description:
-      // 'A project made with React using Vite. Connects to a third party API for location information and provides users a search bar to choose where to go.',
-      // 'A location search tool built with React and Vite. It connects to a third-party API to fetch location information and provides users with a search bar to explore different destinations. This project was an excellent opportunity to practice integrating APIs and using modern web development tools like Tailwind and TypeScript.',
-      'A location search tool built with React and Vite. It connects to a third-party API to fetch location information and provides users with a search bar to explore different destinations.',
+  //     // 'Polymer',
+  //   ],
+  //   image: booklist2,
+  //   links: {
+  //     github: 'https://github.com/HyunKodes/booklist',
+  //     preview: 'https://booklist-lib.netlify.app/',
+  //     disabled: {
+  //       github: false,
+  //       preview: false,
+  //     },
+  //   },
+  // },
+  // {
+  //   title: 'Location Search',
+  //   description:
+  //     // 'A project made with React using Vite. Connects to a third party API for location information and provides users a search bar to choose where to go.',
+  //     // 'A location search tool built with React and Vite. It connects to a third-party API to fetch location information and provides users with a search bar to explore different destinations. This project was an excellent opportunity to practice integrating APIs and using modern web development tools like Tailwind and TypeScript.',
+  //     'A location search tool built with React and Vite. It connects to a third-party API to fetch location information and provides users with a search bar to explore different destinations.',
 
-    skills: [
-      'HTML',
-      'CSS',
-      'React',
-      'Vite',
-      'Tailwind',
-      'TypeScript',
-      // 'Polymer',
-    ],
-    image: map,
-    links: {
-      github: 'https://github.com/HyunKodes/map',
-      preview: 'https://g-mapapp.netlify.app',
-      disabled: {
-        github: false,
-        preview: false,
-      },
-    },
-  },
+  //   skills: [
+  //     'HTML',
+  //     'CSS',
+  //     'React',
+  //     'Vite',
+  //     'Tailwind',
+  //     'TypeScript',
+  //     // 'Polymer',
+  //   ],
+  //   image: map,
+  //   links: {
+  //     github: 'https://github.com/HyunKodes/map',
+  //     preview: 'https://g-mapapp.netlify.app',
+  //     disabled: {
+  //       github: false,
+  //       preview: false,
+  //     },
+  //   },
+  // },
   {
     title: 'Project Display',
     description:
@@ -94,10 +95,10 @@ export default [
       'A vibrant showcase of the projects I worked on as part of my personal and academic projects. It served as my sandbox for experimenting with layouts, animated gifs, dark/light themes, smooth scrolling, modal pop-ups, css animations, and more. Each project card highlights my familiarity with a variety of technologies.',
     skills: ['HTML', 'CSS', 'React', 'JavaScript', 'Bootstrap', 'C#'],
     // skills: ['HTML', 'CSS', 'Sass', 'JavaScript', 'ES6', 'React', 'Redux'],
-    image: hkodes,
+    image: tkodes,
     links: {
       github: 'https://github.com/HyunKodes/portfolio-2022.git',
-      preview: 'https://hkode.netlify.app/',
+      preview: 'https://tkodes.netlify.app/',
       disabled: {
         github: true,
         preview: false,
@@ -116,17 +117,17 @@ export default [
       preview: 'https://succulents-haven.netlify.app',
     },
   },
-  // {
-  //   title: 'Image Search App',
-  //   description:
-  //     'An application that connects to a third party API for a presentation of images based on key terms.',
-  //   skills: ['React', 'HTML', 'CSS', 'JavaScript'],
-  //   image: baseball,
-  //   links: {
-  //     github: 'https://github.com/HyunKodes/pics',
-  //     preview: 'https://pics-engine.netlify.app',
-  //   },
-  // },
+  {
+    title: 'Image Search App',
+    description:
+      'An application that connects to a third party API for a presentation of images based on key terms.',
+    skills: ['React', 'HTML', 'CSS', 'JavaScript'],
+    image: pics,
+    links: {
+      github: 'https://github.com/HyunKodes/pics',
+      preview: 'https://pics-engine.netlify.app',
+    },
+  },
   // {
   //   title: 'RPG Project',
   //   description:

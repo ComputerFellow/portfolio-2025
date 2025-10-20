@@ -37,10 +37,17 @@ body.dark-theme {
 
   .project-card {
     background-color: #07060e;
+    border: solid 3px #010000d9;
+
 
     .project-image {
-      filter: opacity(80%);
+      // filter: opacity(80%);
+      
     }
+    
+    // &:hover .project-image {
+    //   filter: saturate(1.2) contrast(1.1);
+    // }
 
     .project-background {
       background: url('../images/project-background-dark.svg');
