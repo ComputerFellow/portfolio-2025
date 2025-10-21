@@ -98,7 +98,7 @@ class ProjectLinks extends React.PureComponent {
             disabled && disabled.preview ? 'disabled' : ''
           }`}
         >
-          Live Demo <FontAwesomeIcon icon="external-link-alt" />
+          Live Demo &nbsp;&nbsp;&nbsp;<FontAwesomeIcon icon="external-link-alt" />
         </a>
         <a
           href={github}
