@@ -192,7 +192,7 @@
         height: 95px;
         margin: 1%;
         border-radius: 100%;
-        border: 1.25px dotted #ffffff3c;
+        border: none;
         display: none;
         margin-left: auto;
         // margin-bottom: -2%;
@@ -215,6 +215,7 @@
           -15px -15px 30px rgba(30, 28, 60, 0.5),
           inset 6px 6px 12px rgba(0, 0, 0, 0.65),
           inset -6px -6px 12px rgba(35, 33, 70, 0.4);
+        border: 1.25px dotted #ffffff3c;
       }
 
       @include tablet {
@@ -241,7 +242,7 @@
 
         .project-skill {
           border-radius: 8px;
-          border: 2px solid $highlighterGreen;
+          border: 1.5px solid $highlighterGreen;
           padding: 8px;
           margin-right: 10px;
           margin-bottom: 10px;
