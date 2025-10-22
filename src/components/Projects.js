@@ -117,7 +117,7 @@ class ProjectLinks extends React.PureComponent {
 
 class ProjectCard extends React.PureComponent {
   render() {
-    const { image, title, description, skills, links } = this.props;
+    const { image, imageCircle, title, description, skills, links } = this.props;
 
     return (
       <div className="project-card">
@@ -129,7 +129,7 @@ class ProjectCard extends React.PureComponent {
           <ProjectSkills skills={skills} />
           <div className="links-and-circles">
             <ProjectLinks links={links} />
-            <img className="circles" src={image} />
+            <img className="circles" src={imageCircle} />
           </div>
         </div>
       </div>
@@ -149,6 +149,7 @@ class Projects extends React.PureComponent {
             skills={proj.skills}
             links={proj.links}
             image={proj.image}
+            imageCircle={proj.imageCircle}
             key={proj.title}
           />
         ))}

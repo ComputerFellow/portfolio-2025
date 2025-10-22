@@ -1,8 +1,11 @@
 import tkodes from 'images/tkodes-v2.jpg';
+import tkodesCircle from 'images/tkodes-circle.jpg';
 import music from 'images/music-v3.jpg';
+import musicCircle from 'images/music-circle2.jpg';
 import scriptteam from 'images/scriptteam.jpg';
 import baseball from 'images/baseball.jpg';
-import pics from 'images/pics-engine.jpg';
+// import pics from 'images/pics-engine.jpg';
+import pics from 'images/pics-engine-no-border.jpg';
 import carousel from 'images/carousel.jpg';
 import carouseldark from 'images/carousel-dark.jpg';
 import carouseldark2 from 'images/carousel-dark2.jpg';
@@ -11,6 +14,8 @@ import booklist2 from 'images/booklist2.jpg';
 import map from 'images/mapapp.jpg';
 import cynthias from 'images/cynthias.jpg';
 import stringofpearls from 'images/stringofpearls.jpg';
+import stringofpearlsCircle from 'images/stringofpearls.jpg';
+import halloweenCircle from 'images/halloween2.jpg';
 
 // import pbox from 'images/pbox.jpg';
 
@@ -78,6 +83,7 @@ export default [
       "This project showcases a collection of documentation for projects I've designed. It includes a carousel with images of technical diagrams, software tools, mockup/wireframes, and UI screenshots. This project highlights what is possible with HTML, CSS, and JavaScript.",
     skills: ['HTML', 'CSS', 'JavaScript'],
     image: carouseldark2,
+    imageCircle: carouseldark2,
     links: {
       github: 'https://github.com/HyunKodes/carousel',
       preview: 'https://carouse-l.netlify.app/',
@@ -96,6 +102,7 @@ export default [
     skills: ['HTML', 'CSS', 'React', 'JavaScript', 'Bootstrap', 'C#'],
     // skills: ['HTML', 'CSS', 'Sass', 'JavaScript', 'ES6', 'React', 'Redux'],
     image: tkodes,
+    imageCircle: tkodesCircle,
     links: {
       github: 'https://github.com/HyunKodes/portfolio-2022.git',
       preview: 'https://tkodes.netlify.app/',
@@ -112,6 +119,7 @@ export default [
       'This website was built using plain HTML and CSS for a client business specializing in succulents designed to reflect the simplicity and beauty of these resilient plants, providing clear and elegant navigation.',
     skills: ['HTML', 'CSS'],
     image: stringofpearls,
+    imageCircle: stringofpearlsCircle,
     links: {
       github: 'https://github.com/HyunKodes/cynthias',
       preview: 'https://succulents-haven.netlify.app',
@@ -123,6 +131,7 @@ export default [
       'An application that connects to a third party API for a presentation of images based on key terms.',
     skills: ['React', 'HTML', 'CSS', 'JavaScript'],
     image: pics,
+    imageCircle: halloweenCircle,
     links: {
       github: 'https://github.com/HyunKodes/pics',
       preview: 'https://pics-engine.netlify.app',
@@ -179,6 +188,7 @@ export default [
       'This project leverages ES6 features of JavaScript, such as template literals and arrow syntax, along with optional chaining. It was a great opportunity to practice JavaScript, and the musical aspect made it an engaging experience.',
     skills: ['HTML', 'CSS', 'SASS', 'JavaScript', 'ES6'],
     image: music,
+    imageCircle: musicCircle,
     links: {
       github: 'https://github.com/HyunKodes/music',
       preview: 'https://hkode.netlify.app/music',
