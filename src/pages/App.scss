@@ -16,6 +16,7 @@ body.dark-theme {
     .terminal-window {
       background-color: #07060e;
       transition: background-color 1s, color 1s;
+      border: solid 1.5px #9493934a;
     }
   }
   .navbar-container {
