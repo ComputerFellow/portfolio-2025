@@ -4,7 +4,7 @@ class Footer extends React.PureComponent {
   render() {
     return (
       <div className="footer">
-        <span>HKodes © {new Date().getFullYear()}</span>
+        <span>tkdev.online © {new Date().getFullYear()}</span>
       </div>
     );
   }
