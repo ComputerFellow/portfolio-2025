@@ -2,6 +2,8 @@ import tkodes from 'images/tkodes-v2.jpg';
 import tkodesCircle from 'images/tkodes-circle.jpg';
 import music from 'images/music-v3.jpg';
 import musicCircle from 'images/music-circle2.jpg';
+import fish from 'images/fish.jpg';
+import fish2 from 'images/fish2.jpg';
 import chat from 'images/chat.jpg';
 import chatCircle from 'images/chat-circle.jpg';
 import scriptteam from 'images/scriptteam.jpg';
@@ -103,7 +105,7 @@ export default [
     image: chat,
     imageCircle: chatCircle,
     links: {
-      github: 'https://github.com/HyunKodes/concise-chat',
+      github: 'https://github.com/ComputerFellow/concise-chat',
       preview: 'https://cothink.netlify.app',
       disabled: {
         github: false,
@@ -115,12 +117,12 @@ export default [
     title: 'Custom Plant Site',
     description:
       // 'A website built using plain HTML and CSS for a client business that deals with all things succulents.',
-      'This website was built using plain HTML and CSS for a client business specializing in succulents designed to reflect the simplicity and beauty of these resilient plants, providing clear and elegant navigation.',
+      'This website was built using plain HTML and CSS for a business specializing in succulents designed to reflect the simplicity and beauty of these resilient plants, providing clear and elegant navigation.',
     skills: ['HTML', 'CSS'],
     image: stringofpearls,
     imageCircle: stringofpearlsCircle,
     links: {
-      github: 'https://github.com/HyunKodes/cynthias',
+      github: 'https://github.com/ComputerFellow/succulents-haven',
       preview: 'https://succulents-haven.netlify.app',
     },
   },
@@ -145,7 +147,7 @@ export default [
   {
     title: 'Image Search App',
     description:
-      'An application that connects to a third party API for a presentation of images based on key terms.',
+      'This minimalist image search app connects to the Unsplash API to deliver a curated grid of high-quality photos based on user keywords. Built with React, it features a clean, responsive design.',
     skills: ['React', 'HTML', 'CSS', 'JavaScript'],
     image: pics,
     imageCircle: halloweenCircle,
@@ -202,13 +204,13 @@ export default [
     description:
       // 'This project is based off <a href="#">this project</a> that has been instrumental in practicing a few front-end technologies.',
       // 'This project made use of the ES6 features of JavaScript including template literals and arrow synthax. It uses optional chaining. Great for practicing with JavaScript and the music makes it gripping.',
-      'This project leverages ES6 features of JavaScript, such as template literals and arrow syntax, along with optional chaining. It was a great opportunity to practice JavaScript, and the musical aspect made it an engaging experience.',
+      'This project leverages ES6 features of JavaScript, such as template literals and arrow syntax, along with optional chaining. It was a great opportunity to practice JavaScript, and the musical aspect made it an engaging experience. This was a part of Introductory JavaScript through FreeCodeCamp.',
     skills: ['HTML', 'CSS', 'SASS', 'JavaScript', 'ES6'],
     image: music,
     imageCircle: musicCircle,
     links: {
       github: 'https://github.com/HyunKodes/music',
-      preview: 'https://hkode.netlify.app/music',
+      preview: 'https://tkodes.netlify.app/music',
       disabled: {
         github: false,
         preview: false,
