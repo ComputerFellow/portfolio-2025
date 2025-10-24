@@ -2,6 +2,8 @@ import tkodes from 'images/tkodes-v2.jpg';
 import tkodesCircle from 'images/tkodes-circle.jpg';
 import music from 'images/music-v3.jpg';
 import musicCircle from 'images/music-circle2.jpg';
+import chat from 'images/chat.jpg';
+import chatCircle from 'images/chat-circle.jpg';
 import scriptteam from 'images/scriptteam.jpg';
 import baseball from 'images/baseball.jpg';
 // import pics from 'images/pics-engine.jpg';
@@ -76,38 +78,35 @@ export default [
   //   },
   // },
   {
-    title: 'Project Display',
+    // title: 'Project Display',
+    // description:
+    //   // 'This project is based off <a href="#">this project</a> that has been instrumental in practicing a few front-end technologies.',
+    //   // "This project is a collection of documentation for projects I've designed, including a few technologies I've additionally used.",
+    //   "This project showcases a collection of documentation for projects I've designed. It includes a carousel with images of technical diagrams, software tools, mockup/wireframes, and UI screenshots. This project highlights what is possible with HTML, CSS, and JavaScript.",
+    // skills: ['HTML', 'CSS', 'JavaScript'],
+    // image: carouseldark2,
+    // imageCircle: carouseldark2,
+    // links: {
+    //   github: 'https://github.com/HyunKodes/carousel',
+    //   preview: 'https://carouse-l.netlify.app/',
+    //   disabled: {
+    //     github: false,
+    //     preview: false,
+    //   },
+    // },
+    title: 'CoThink Chat',
     description:
       // 'This project is based off <a href="#">this project</a> that has been instrumental in practicing a few front-end technologies.',
       // "This project is a collection of documentation for projects I've designed, including a few technologies I've additionally used.",
-      "This project showcases a collection of documentation for projects I've designed. It includes a carousel with images of technical diagrams, software tools, mockup/wireframes, and UI screenshots. This project highlights what is possible with HTML, CSS, and JavaScript.",
-    skills: ['HTML', 'CSS', 'JavaScript'],
-    image: carouseldark2,
-    imageCircle: carouseldark2,
+      "This project demonstrates an interactive AI chat interface where two distinct models—Haiku and ChatGPT—collaborate within a single conversation. It features a sleek, responsive UI built with React, dynamic message handling, and a mode toggle for concise or detailed replies. This project highlights real-time state management, API integration, and modern front-end design.",
+    skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+    image: chat,
+    imageCircle: chatCircle,
     links: {
-      github: 'https://github.com/HyunKodes/carousel',
-      preview: 'https://carouse-l.netlify.app/',
+      github: 'https://github.com/HyunKodes/concise-chat',
+      preview: 'https://cothink.netlify.app',
       disabled: {
         github: false,
-        preview: false,
-      },
-    },
-  },
-
-  {
-    title: 'Previous Portfolio',
-    description:
-      // 'A website showcasing a collection of projects I worked on as a freelance developer. I used it mostly to practice layouts, animations, dark/light themes, and smooth scrolling.',
-      'A vibrant showcase of the projects I worked on as part of my personal and academic projects. It served as my sandbox for experimenting with layouts, animated gifs, dark/light themes, smooth scrolling, modal pop-ups, css animations, and more. Each project card highlights my familiarity with a variety of technologies.',
-    skills: ['HTML', 'CSS', 'React', 'JavaScript', 'Bootstrap', 'C#'],
-    // skills: ['HTML', 'CSS', 'Sass', 'JavaScript', 'ES6', 'React', 'Redux'],
-    image: tkodes,
-    imageCircle: tkodesCircle,
-    links: {
-      github: 'https://github.com/HyunKodes/portfolio-2022.git',
-      preview: 'https://tkodes.netlify.app/',
-      disabled: {
-        github: true,
         preview: false,
       },
     },
@@ -123,6 +122,24 @@ export default [
     links: {
       github: 'https://github.com/HyunKodes/cynthias',
       preview: 'https://succulents-haven.netlify.app',
+    },
+  },
+  {
+    title: 'Previous Portfolio',
+    description:
+      // 'A website showcasing a collection of projects I worked on as a freelance developer. I used it mostly to practice layouts, animations, dark/light themes, and smooth scrolling.',
+      'A vibrant showcase of the projects I worked on as part of my personal and academic projects. It served as my sandbox for experimenting with layouts, animated gifs, dark/light themes, smooth scrolling, modal pop-ups, css animations, and more. Each project card highlights my familiarity with a variety of technologies.',
+    skills: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'C#'],
+    // skills: ['HTML', 'CSS', 'Sass', 'JavaScript', 'ES6', 'React', 'Redux'],
+    image: tkodes,
+    imageCircle: tkodesCircle,
+    links: {
+      github: 'https://github.com/HyunKodes/portfolio-2022.git',
+      preview: 'https://tkodes.netlify.app/',
+      disabled: {
+        github: true,
+        preview: false,
+      },
     },
   },
   {
