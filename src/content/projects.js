@@ -10,6 +10,8 @@ import scriptteam from 'images/scriptteam.jpg';
 import baseball from 'images/baseball.jpg';
 // import pics from 'images/pics-engine.jpg';
 import pics from 'images/pics-engine-no-border.jpg';
+import nexus from 'images/nexus.jpg';
+import nexusCircle from 'images/nexus-Circle.jpg';
 import carousel from 'images/carousel.jpg';
 import carouseldark from 'images/carousel-dark.jpg';
 import carouseldark2 from 'images/carousel-dark2.jpg';
@@ -154,6 +156,18 @@ export default [
     links: {
       github: 'https://github.com/HyunKodes/pics',
       preview: 'https://pics-engine.netlify.app',
+    },
+  },
+  {
+    title: 'Nexus Website',
+    description:
+      'This project showcases a cutting-edge technology company landing page featuring immersive video backgrounds, smooth scroll animations, and a bold, futuristic design aesthetic. Built with vanilla JavaScript and custom CSS, it implements intersection observers for dynamic content reveals, synchronized video fade effects, and responsive navigation for showcasing advanced technology systems.',
+    skills: ['HTML', 'CSS', 'JavaScript'],
+    image: nexus,
+    imageCircle: nexusCircle,
+    links: {
+      github: 'https://github.com/HyunKodes/nexus',
+      preview: 'https://nexuso.netlify.app',
     },
   },
   // {
